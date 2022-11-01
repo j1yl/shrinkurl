@@ -28,7 +28,7 @@ const Navbar = () => {
       </button>
       <div>
         {isOpen && (
-          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white">
+          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white bg-slate-900">
             <li className="list-none py-6">
               <a href="/" className="text-base block w-full">
                 Home
