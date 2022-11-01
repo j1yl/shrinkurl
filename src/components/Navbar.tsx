@@ -4,9 +4,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[60px] flex max-w-4xl justify-between items-center relative px-1 py-0 bg-black font-mono">
+    <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0 bg-slate-800 font-mono">
       <a href="/" className="text-xl">
-        BrandName
+        ShrinkURL
       </a>
       <button
         className="block md:hidden h-[40px] w-[40px] absolute top-[50%] right-[0px] -translate-y-1/2"
@@ -28,7 +28,7 @@ const Navbar = () => {
       </button>
       <div>
         {isOpen && (
-          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] bg-black border-t border-t-white">
+          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white">
             <li className="list-none py-6">
               <a href="/" className="text-base block w-full">
                 Home
@@ -41,12 +41,12 @@ const Navbar = () => {
             </li>
             <li className="list-none py-6">
               <a href="/" className="text-base block w-full">
-                Contact
+                Demo
               </a>
             </li>
           </ul>
         )}
-        <ul className="hidden md:flex items-center w-full bg-black gap-10">
+        <ul className="hidden md:flex items-center w-full gap-10">
           <li className="list-none">
             <a href="/" className="text-base block w-full">
               Home
@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li className="list-none">
             <a href="/" className="text-base block w-full">
-              Contact
+              Demo
             </a>
           </li>
         </ul>
