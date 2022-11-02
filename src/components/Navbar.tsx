@@ -1,13 +1,20 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0">
-      <a href="/" className="text-xl">
+      <Link
+        to="main"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer text-xl"
+      >
         SHRINKURL
-      </a>
+      </Link>
       <button
         className="block md:hidden h-[40px] w-[40px] absolute top-[50%] right-[0px] -translate-y-1/2"
         onClick={() => setIsOpen(!isOpen)}
@@ -30,17 +37,32 @@ const Navbar = () => {
         {isOpen && (
           <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white bg-black">
             <li className="list-none py-6">
-              <a href="/" className="text-sm block w-full">
+              <Link
+                to="main"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-sm block w-full"
+              >
                 _HOME
-              </a>
+              </Link>
             </li>
             <li className="list-none py-6">
-              <a href="/" className="text-sm block w-full">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-sm block w-full"
+              >
                 _ABOUT
-              </a>
+              </Link>
             </li>
             <li className="list-none py-6">
-              <a href="/" className="text-sm block w-full">
+              <a
+                href="mailto: lefodev@gmail.com"
+                className="cursor-pointer text-sm block w-full"
+              >
                 _CONTACT
               </a>
             </li>
@@ -48,17 +70,32 @@ const Navbar = () => {
         )}
         <ul className="hidden md:flex items-center w-full gap-4">
           <li className="list-none">
-            <a href="/" className="text-sm block w-full">
+            <Link
+              to="main"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-sm block w-full"
+            >
               _HOME
-            </a>
+            </Link>
           </li>
           <li className="list-none">
-            <a href="/" className="text-sm block w-full">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-sm block w-full"
+            >
               _ABOUT
-            </a>
+            </Link>
           </li>
           <li className="list-none">
-            <a href="/" className="text-sm block w-full">
+            <a
+              href="mailto: lefodev@gmail.com"
+              className="cursor-pointer text-sm block w-full"
+            >
               _CONTACT
             </a>
           </li>
