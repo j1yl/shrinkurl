@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0 font-mont">
+    <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0">
       <a href="/" className="text-xl">
         SHRINKURL
       </a>
