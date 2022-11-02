@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
         <header className="max-w-4xl mx-auto">
           <Navbar />
         </header>
-        <main className="max-w-4xl mx-auto"></main>
+        <main className="max-w-4xl mx-auto">
+          <Hero />
+        </main>
       </div>
     </>
   );
