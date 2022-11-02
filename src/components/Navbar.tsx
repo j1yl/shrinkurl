@@ -4,9 +4,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0 bg-slate-800 font-mono">
+    <nav className="w-full h-[60px] flex justify-between items-center relative px-1 py-0 font-mont">
       <a href="/" className="text-xl">
-        ShrinkURL
+        SHRINKURL
       </a>
       <button
         className="block md:hidden h-[40px] w-[40px] absolute top-[50%] right-[0px] -translate-y-1/2"
@@ -28,38 +28,38 @@ const Navbar = () => {
       </button>
       <div>
         {isOpen && (
-          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white bg-slate-900">
+          <ul className="flex md:hidden absolute top-[60px] left-0 flex-col items-center w-full h-[90vh] border-t border-t-white bg-black">
             <li className="list-none py-6">
-              <a href="/" className="text-base block w-full">
-                Home
+              <a href="/" className="text-sm block w-full">
+                _HOME
               </a>
             </li>
             <li className="list-none py-6">
-              <a href="/" className="text-base block w-full">
-                About
+              <a href="/" className="text-sm block w-full">
+                _ABOUT
               </a>
             </li>
             <li className="list-none py-6">
-              <a href="/" className="text-base block w-full">
-                Demo
+              <a href="/" className="text-sm block w-full">
+                _CONTACT
               </a>
             </li>
           </ul>
         )}
-        <ul className="hidden md:flex items-center w-full gap-10">
+        <ul className="hidden md:flex items-center w-full gap-4">
           <li className="list-none">
-            <a href="/" className="text-base block w-full">
-              Home
+            <a href="/" className="text-sm block w-full">
+              _HOME
             </a>
           </li>
           <li className="list-none">
-            <a href="/" className="text-base block w-full">
-              About
+            <a href="/" className="text-sm block w-full">
+              _ABOUT
             </a>
           </li>
           <li className="list-none">
-            <a href="/" className="text-base block w-full">
-              Demo
+            <a href="/" className="text-sm block w-full">
+              _CONTACT
             </a>
           </li>
         </ul>
