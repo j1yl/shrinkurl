@@ -9,7 +9,7 @@ function App() {
         <header className="max-w-4xl mx-auto">
           <Navbar />
         </header>
-        <main className="max-w-4xl mx-auto">
+        <main className="max-w-4xl mx-auto h-[90vh]">
           <Hero />
         </main>
       </div>
