@@ -34,7 +34,7 @@ const Hero = () => {
         >
           <input
             placeholder="ENTER YOUR URL HERE"
-            className="bg-transparent focus:outline-none placeholder-gray-400 uppercase"
+            className="bg-transparent focus:outline-none placeholder-gray-400 uppercase w-5/6"
             onChange={(e) => setInputUrl(e.target.value)}
           />
           <button type="submit" className="underline">
